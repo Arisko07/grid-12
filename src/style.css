@@ -1,0 +1,221 @@
+h1,
+p,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+input:focus {
+  outline: none;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p {
+  font-weight: 400;
+}
+
+.header {
+  position: relative;
+  height: 460px;
+  background-color: #3852F7;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+.header__content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-inline: 12.1875%;
+  max-width: 1290px;
+  color: white;
+}
+.header__content-logo {
+  margin-top: 70px;
+}
+.header__content-title {
+  font-size: 80px;
+  line-height: 73%;
+  grid-column: 1/7;
+  margin-top: 103px;
+}
+.header__content-description {
+  font-size: 24px;
+  line-height: 114%;
+  grid-column: 1/7;
+  margin-top: 24px;
+}
+
+.tri {
+  position: absolute;
+}
+.tri-1 {
+  top: 126px;
+  right: 23.125%;
+  width: 18.5%;
+  max-width: 296px;
+}
+.tri-2 {
+  z-index: 2;
+  right: 6.5%;
+  top: 74px;
+  width: 27.875%;
+  max-width: 446px;
+}
+.tri-3 {
+  right: 0;
+  top: 0;
+  width: 17.125%;
+  max-width: 274px;
+}
+
+.main-content {
+  max-width: 1290px;
+  margin-inline: 12.1875%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 2.3255813953%;
+       column-gap: 2.3255813953%;
+}
+.main-content .filter {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 2.3255813953%;
+       column-gap: 2.3255813953%;
+  grid-column: 1/13;
+  margin-bottom: 3.1007751938%;
+  height: 64px;
+}
+.main-content .filter__search {
+  position: relative;
+  grid-column: 1/8;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+}
+.main-content .filter__search input {
+  border: 0;
+  height: 100%;
+  padding-inline: 54px;
+  width: 100%;
+}
+.main-content .filter__search::before {
+  content: url(../img/magnifying-glass-solid.svg);
+  width: 20px;
+  position: absolute;
+  left: 22px;
+  top: 22px;
+}
+.main-content .filter__sort {
+  display: flex;
+  justify-content: center;
+  grid-column: 11/13;
+  border: 1px solid #E6E6E6;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #3852F7;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../img/dropdown.svg) 80% center no-repeat !important;
+  padding-left: 20%;
+}
+.main-content .table {
+  display: grid;
+  grid-column: 1/13;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 2.326%;
+       column-gap: 2.326%;
+}
+.main-content .table__content {
+  margin-bottom: 21.3333333333%;
+}
+.main-content .table__image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  margin-bottom: 5.3333333333%;
+}
+.main-content .table__image-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.main-content .table__title {
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 2.6666666667%;
+  color: black;
+}
+.main-content .table__description {
+  font-weight: 400;
+  color: #6C6C6C;
+  font-size: 14px;
+  line-height: 122%;
+}
+.main-content .table__empty {
+  grid-column: 1/13;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+
+@media screen and (min-width: 1600px) {
+  .main-content,
+.header__content {
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .main-content .filter__search {
+    grid-column: 1/7;
+  }
+  .main-content .filter__sort {
+    grid-column: 7/13;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-content,
+.header__content {
+    margin-inline: 6.6666666667%;
+  }
+  .header {
+    position: relative;
+    height: 220px;
+  }
+  .header__content-logo {
+    margin-top: 25px;
+  }
+  .header__content-title {
+    font-size: 32px;
+    grid-column: 1/4;
+    margin-top: 42px;
+  }
+  .header__content-description {
+    font-size: 14px;
+    grid-column: 1/4;
+    margin-top: 8px;
+  }
+  .main-content .table {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .main-content .table__image {
+    margin-bottom: 5.2287581699%;
+  }
+  .main-content .table__title {
+    font-size: 18px;
+    margin-bottom: 5.2287581699%;
+    color: black;
+  }
+  .main-content .table__description {
+    font-weight: 400;
+    color: #6C6C6C;
+    font-size: 14px;
+    line-height: 122%;
+  }
+}/*# sourceMappingURL=style.css.map */
